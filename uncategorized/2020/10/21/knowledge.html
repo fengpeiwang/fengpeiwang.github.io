@@ -20,30 +20,41 @@
     var CONFIG = {"hostname":"fengpeiwang.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="啦啦啦">
-<meta property="og:type" content="website">
-<meta property="og:title" content="夜猫的啼叫">
-<meta property="og:url" content="http://fengpeiwang.github.io/index.html">
+  <meta name="description" content="需求  如何从一个海量文件中寻找出现次数最多的10个元素？（TopN）      如何从两个大数据集中找出共同元素？（求交集）   如何设计一个高效算法判断一个元素是否存在于一个庞大集合内？（布隆过滤器）      1、求 TopN                 数据量小：先排序，然后limit 3                 数据量大：先分区&#x2F;分桶（把数据先分成多个小的组成部分），">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Knowledge">
+<meta property="og:url" content="http://fengpeiwang.github.io/uncategorized/2020/10/21/knowledge.html">
 <meta property="og:site_name" content="夜猫的啼叫">
-<meta property="og:description" content="啦啦啦">
+<meta property="og:description" content="需求  如何从一个海量文件中寻找出现次数最多的10个元素？（TopN）      如何从两个大数据集中找出共同元素？（求交集）   如何设计一个高效算法判断一个元素是否存在于一个庞大集合内？（布隆过滤器）      1、求 TopN                 数据量小：先排序，然后limit 3                 数据量大：先分区&#x2F;分桶（把数据先分成多个小的组成部分），">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://fengpeiwang.github.io/images/image-20200506224907986.png">
+<meta property="og:image" content="http://fengpeiwang.github.io/images/image-20200506224907986.png">
+<meta property="og:image" content="http://fengpeiwang.github.io/Users/wangfeng/Library/Application%20Support/typora-user-images/image-20200506224817897.png">
+<meta property="og:image" content="http://fengpeiwang.github.io/Users/wangfeng/Library/Application%20Support/typora-user-images/image-20200506230144060.png">
+<meta property="og:image" content="http://fengpeiwang.github.io/Users/wangfeng/Library/Application%20Support/typora-user-images/image-20200507080745974.png">
+<meta property="og:image" content="http://fengpeiwang.github.io/Users/wangfeng/Library/Application%20Support/typora-user-images/image-20200507082432134.png">
+<meta property="og:image" content="http://fengpeiwang.github.io/Users/wangfeng/Library/Application%20Support/typora-user-images/image-20200511080727192.png">
+<meta property="og:image" content="http://fengpeiwang.github.io/Users/wangfeng/Library/Application%20Support/typora-user-images/image-20200511080756953.png">
+<meta property="article:published_time" content="2020-10-21T12:00:54.000Z">
+<meta property="article:modified_time" content="2020-10-22T02:14:28.728Z">
 <meta property="article:author" content="阿峰">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://fengpeiwang.github.io/images/image-20200506224907986.png">
 
-<link rel="canonical" href="http://fengpeiwang.github.io/">
+<link rel="canonical" href="http://fengpeiwang.github.io/uncategorized/2020/10/21/knowledge.html">
 
 
 <script id="page-configurations">
   // https://hexo.io/docs/variables.html
   CONFIG.page = {
     sidebar: "",
-    isHome : true,
-    isPost : false,
+    isHome : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
 
-  <title>夜猫的啼叫</title>
+  <title>Knowledge | 夜猫的啼叫</title>
   
 
 
@@ -142,79 +153,10 @@
         <div class="content-wrap">
           
 
-          <div class="content index posts-expand">
+          <div class="content post posts-expand">
             
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://fengpeiwang.github.io/uncategorized/2020/10/22/hello-world.html">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="阿峰">
-      <meta itemprop="description" content="啦啦啦">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="夜猫的啼叫">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/uncategorized/2020/10/22/hello-world.html" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2020-10-22 10:47:29" itemprop="dateCreated datePublished" datetime="2020-10-22T10:47:29+08:00">2020-10-22</time>
-            </span>
-
-          
-
-        </div>
-      </header>
 
     
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
-      
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
@@ -230,10 +172,9 @@
       <meta itemprop="name" content="夜猫的啼叫">
     </span>
       <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/uncategorized/2020/10/21/knowledge.html" class="post-title-link" itemprop="url">Knowledge</a>
-        </h2>
+        <h1 class="post-title" itemprop="name headline">
+          Knowledge
+        </h1>
 
         <div class="post-meta">
             <span class="post-meta-item">
@@ -263,7 +204,7 @@
     <div class="post-body" itemprop="articleBody">
 
       
-          <p><strong>需求</strong></p>
+        <p><strong>需求</strong></p>
 <ol>
 <li><p>如何从一个海量文件中寻找出现次数最多的10个元素？（TopN）    </p>
 </li>
@@ -542,21 +483,30 @@
 
 
 
-      
     </div>
 
     
     
     
+
       <footer class="post-footer">
-        <div class="post-eof"></div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item"></div>
+      <div class="post-nav-item">
+    <a href="/uncategorized/2020/10/22/hello-world.html" rel="next" title="Hello World">
+      Hello World <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
       </footer>
+    
   </article>
   
   
-  
-
-
   
 
 
